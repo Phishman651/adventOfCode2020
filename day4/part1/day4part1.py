@@ -59,6 +59,7 @@ def checkPassport(passportList):
     IssueYear = "iyr:"
     ExpYear = "eyr:"
     Height = "hgt:"
+    HairColor = "hcl:"
     EyeClr = "ecl:"
     PassId = "pid:"
     CntryId = "cid:"
@@ -77,6 +78,10 @@ def checkPassport(passportList):
         return False
     if Height in passportList:
         print("Height Present!")
+    else:
+        return False
+    if HairColor in passportList:
+        print("Hair Color Present!")
     else:
         return False
     if EyeClr in passportList:
